@@ -1,1 +1,1 @@
-<?php return array('dependencies' => array('jquery-effects-shake'), 'version' => '34d14a1cba3c49a0ec36');
+<?php return array('dependencies' => array('jquery-effects-shake'), 'version' => '5c92ea4cfa052f60508d');
