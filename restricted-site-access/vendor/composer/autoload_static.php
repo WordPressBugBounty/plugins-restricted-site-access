@@ -4,33 +4,33 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit1c8b0edbac56d1b1b7be0c34d8e31eff
+class ComposerStaticInitbd6ef2a6a7c8bc05287b1e62d483e407
 {
     public static $prefixLengthsPsr4 = array (
-        'W' => 
+        'W' =>
         array (
             'WP_Compat_Validation_Tool\\' => 26,
         ),
-        'I' => 
+        'I' =>
         array (
             'IPLib\\' => 6,
         ),
-        'C' => 
+        'C' =>
         array (
             'Composer\\Installers\\' => 20,
         ),
     );
 
     public static $prefixDirsPsr4 = array (
-        'WP_Compat_Validation_Tool\\' => 
+        'WP_Compat_Validation_Tool\\' =>
         array (
             0 => __DIR__ . '/../..' . '/10up-lib/wp-compat-validation-tool/src',
         ),
-        'IPLib\\' => 
+        'IPLib\\' =>
         array (
             0 => __DIR__ . '/..' . '/mlocati/ip-lib/src',
         ),
-        'Composer\\Installers\\' => 
+        'Composer\\Installers\\' =>
         array (
             0 => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers',
         ),
@@ -43,9 +43,9 @@ class ComposerStaticInit1c8b0edbac56d1b1b7be0c34d8e31eff
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit1c8b0edbac56d1b1b7be0c34d8e31eff::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit1c8b0edbac56d1b1b7be0c34d8e31eff::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInit1c8b0edbac56d1b1b7be0c34d8e31eff::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInitbd6ef2a6a7c8bc05287b1e62d483e407::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInitbd6ef2a6a7c8bc05287b1e62d483e407::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInitbd6ef2a6a7c8bc05287b1e62d483e407::$classMap;
 
         }, null, ClassLoader::class);
     }

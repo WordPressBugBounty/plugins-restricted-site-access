@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
         'name' => '10up/restricted-site-access',
-        'pretty_version' => '7.6.1',
-        'version' => '7.6.1.0',
-        'reference' => '3e65cb78522c547143d7c0167e301066ab92419e',
+        'pretty_version' => '7.6.2',
+        'version' => '7.6.2.0',
+        'reference' => '38a7147377e22a737d7461d29ca076db3860df7d',
         'type' => 'wordpress-plugin',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -11,18 +11,18 @@
     ),
     'versions' => array(
         '10up/restricted-site-access' => array(
-            'pretty_version' => '7.6.1',
-            'version' => '7.6.1.0',
-            'reference' => '3e65cb78522c547143d7c0167e301066ab92419e',
+            'pretty_version' => '7.6.2',
+            'version' => '7.6.2.0',
+            'reference' => '38a7147377e22a737d7461d29ca076db3860df7d',
             'type' => 'wordpress-plugin',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
             'dev_requirement' => false,
         ),
         '10up/wp-compat-validation-tool' => array(
-            'pretty_version' => 'dev-trunk',
-            'version' => 'dev-trunk',
-            'reference' => '19a8c7c1d39d3a4c896aeeac8d42edd20b8d2317',
+            'pretty_version' => '0.4.0',
+            'version' => '0.4.0.0',
+            'reference' => '803d75864699503da0ff64db9b4ba51ea94a316a',
             'type' => 'wordpress-plugin',
             'install_path' => __DIR__ . '/../../10up-lib/wp-compat-validation-tool',
             'aliases' => array(),

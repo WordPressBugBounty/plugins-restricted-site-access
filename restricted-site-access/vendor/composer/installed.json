@@ -2,27 +2,34 @@
     "packages": [
         {
             "name": "10up/wp-compat-validation-tool",
-            "version": "dev-trunk",
-            "version_normalized": "dev-trunk",
+            "version": "0.4.0",
+            "version_normalized": "0.4.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/10up/wp-compat-validation-tool.git",
-                "reference": "19a8c7c1d39d3a4c896aeeac8d42edd20b8d2317"
+                "reference": "803d75864699503da0ff64db9b4ba51ea94a316a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/10up/wp-compat-validation-tool/zipball/803d75864699503da0ff64db9b4ba51ea94a316a",
+                "reference": "803d75864699503da0ff64db9b4ba51ea94a316a",
+                "shasum": ""
             },
             "require": {
                 "composer/installers": "^2.2"
             },
-            "time": "2023-11-09T18:48:23+00:00",
+            "time": "2026-05-20T00:33:32+00:00",
             "type": "wordpress-plugin",
             "extra": {
                 "installer-name": "10up-lib/wp-compat-validation-tool"
             },
-            "installation-source": "source",
+            "installation-source": "dist",
             "autoload": {
                 "psr-4": {
                     "WP_Compat_Validation_Tool\\": "src/"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -36,6 +43,10 @@
             ],
             "description": "Perform PHP and WP version compatibility checks in your plugin.",
             "homepage": "https://github.com/10up/wp-compat-validation-tool",
+            "support": {
+                "issues": "https://github.com/10up/wp-compat-validation-tool/issues",
+                "source": "https://github.com/10up/wp-compat-validation-tool/tree/0.4.0"
+            },
             "install-path": "../../10up-lib/wp-compat-validation-tool"
         },
         {
