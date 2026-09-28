@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
         'name' => '10up/restricted-site-access',
-        'pretty_version' => '7.6.2',
-        'version' => '7.6.2.0',
-        'reference' => '38a7147377e22a737d7461d29ca076db3860df7d',
+        'pretty_version' => '7.6.3',
+        'version' => '7.6.3.0',
+        'reference' => '3b2274277424ae398e2cc400a7f7636a6ff0031d',
         'type' => 'wordpress-plugin',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -11,9 +11,9 @@
     ),
     'versions' => array(
         '10up/restricted-site-access' => array(
-            'pretty_version' => '7.6.2',
-            'version' => '7.6.2.0',
-            'reference' => '38a7147377e22a737d7461d29ca076db3860df7d',
+            'pretty_version' => '7.6.3',
+            'version' => '7.6.3.0',
+            'reference' => '3b2274277424ae398e2cc400a7f7636a6ff0031d',
             'type' => 'wordpress-plugin',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
