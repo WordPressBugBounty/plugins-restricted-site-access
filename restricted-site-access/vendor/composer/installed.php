@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
         'name' => '10up/restricted-site-access',
-        'pretty_version' => '7.6.3',
-        'version' => '7.6.3.0',
-        'reference' => '3b2274277424ae398e2cc400a7f7636a6ff0031d',
+        'pretty_version' => '7.6.4',
+        'version' => '7.6.4.0',
+        'reference' => '24afb222953c203d4e8b72d0e8d1144fbe0da285',
         'type' => 'wordpress-plugin',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -11,9 +11,9 @@
     ),
     'versions' => array(
         '10up/restricted-site-access' => array(
-            'pretty_version' => '7.6.3',
-            'version' => '7.6.3.0',
-            'reference' => '3b2274277424ae398e2cc400a7f7636a6ff0031d',
+            'pretty_version' => '7.6.4',
+            'version' => '7.6.4.0',
+            'reference' => '24afb222953c203d4e8b72d0e8d1144fbe0da285',
             'type' => 'wordpress-plugin',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
@@ -40,14 +40,12 @@
             'dev_requirement' => false,
         ),
         'mlocati/ip-lib' => array(
-            'pretty_version' => 'dev-master',
-            'version' => 'dev-master',
-            'reference' => 'a2c0e36416a814ca164d873da77b19f6e7749aef',
+            'pretty_version' => '1.22.1',
+            'version' => '1.22.1.0',
+            'reference' => 'f096c0e9ec8bd4691ee45394cfb77c97c6bba272',
             'type' => 'library',
             'install_path' => __DIR__ . '/../mlocati/ip-lib',
-            'aliases' => array(
-                0 => '9999999-dev',
-            ),
+            'aliases' => array(),
             'dev_requirement' => false,
         ),
     ),

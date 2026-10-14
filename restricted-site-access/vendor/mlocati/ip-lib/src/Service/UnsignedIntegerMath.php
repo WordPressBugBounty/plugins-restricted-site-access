@@ -22,17 +22,17 @@ class UnsignedIntegerMath
     {
         $m = null;
         if ($onlyDecimal) {
-            if (preg_match('/^0*(\d+)$/', $value, $m)) {
+            if (preg_match('/^0*(\d+)$/D', $value, $m)) {
                 return $this->getBytesFromDecimal($m[1], $numBytes);
             }
         } else {
-            if (preg_match('/^0[Xx]0*([0-9A-Fa-f]+)$/', $value, $m)) {
+            if (preg_match('/^0[Xx]0*([0-9A-Fa-f]+)$/D', $value, $m)) {
                 return $this->getBytesFromHexadecimal($m[1], $numBytes);
             }
-            if (preg_match('/^0+([0-7]*)$/', $value, $m)) {
+            if (preg_match('/^0+([0-7]*)$/D', $value, $m)) {
                 return $this->getBytesFromOctal($m[1], $numBytes);
             }
-            if (preg_match('/^[1-9][0-9]*$/', $value)) {
+            if (preg_match('/^[1-9][0-9]*$/D', $value)) {
                 return $this->getBytesFromDecimal($value, $numBytes);
             }
         }
@@ -67,6 +67,7 @@ class UnsignedIntegerMath
             $value = str_pad($value, $valueLength + 8 - $remainderBits, '0', STR_PAD_LEFT);
         }
         $bytes = array_map('bindec', str_split($value, 8));
+        /** @var int[] $bytes */
 
         return array_pad($bytes, -$numBytes, 0);
     }
@@ -86,14 +87,14 @@ class UnsignedIntegerMath
             '',
             array_map(
                 function ($octalDigit) {
-                    return str_pad(decbin(octdec($octalDigit)), 3, '0', STR_PAD_LEFT);
+                    return str_pad(decbin((int) octdec($octalDigit)), 3, '0', STR_PAD_LEFT);
                 },
                 str_split($value, 1)
             )
         );
         $bits = ltrim($bits, '0');
 
-        return $bits === '' ? array_fill(0, $numBytes, 0) : static::getBytesFromBits($bits, $numBytes);
+        return $bits === '' ? array_fill(0, $numBytes, 0) : self::getBytesFromBits($bits, $numBytes);
     }
 
     /**
@@ -165,6 +166,7 @@ class UnsignedIntegerMath
         }
         $value = str_pad($value, $valueLength + $valueLength % 2, '0', STR_PAD_LEFT);
         $bytes = array_map('hexdec', str_split($value, 2));
+        /** @var int[] $bytes */
 
         return array_pad($bytes, -$numBytes, 0);
     }
